@@ -43,11 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\EnumHelper.cs" />
+    <Compile Include="Entities\Area.cs" />
+    <Compile Include="Entities\Mat.cs" />
+    <Compile Include="Entities\TestRun.cs" />
+    <Compile Include="Managers\AreaManager.cs" />
+    <Compile Include="Managers\ConsoleManager.cs" />
+    <Compile Include="Managers\MatManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\RowColumn.cs" />
+    <Compile Include="Managers\RowColumnManager.cs" />
+    <Compile Include="Entities\Value.cs" />
+    <Compile Include="Managers\ValueManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

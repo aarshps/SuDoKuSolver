@@ -8,21 +8,46 @@ namespace SuDoKu
     {
         static void Main(string[] args)
         {
-            ConsoleManager.isDebug = false;
+            ConsoleManager.isDebug = true;
 
             var values = new Value[9, 9]
             {
-                { Value.Zero, Value.Zero, Value.Zero, Value.Two, Value.Six, Value.Zero, Value.Seven, Value.Zero, Value.One },
-                { Value.Six, Value.Eight, Value.Zero, Value.Zero, Value.Seven, Value.Zero, Value.Zero, Value.Nine, Value.Zero },
-                { Value.One, Value.Nine, Value.Zero, Value.Zero, Value.Zero, Value.Four, Value.Five, Value.Zero, Value.Zero },
-                
-                { Value.Eight, Value.Two, Value.Zero, Value.One, Value.Zero, Value.Zero, Value.Zero, Value.Four, Value.Zero },
-                { Value.Zero, Value.Zero, Value.Four, Value.Six, Value.Zero, Value.Two, Value.Nine, Value.Zero, Value.Zero },
-                { Value.Zero, Value.Five, Value.Zero, Value.Zero, Value.Zero, Value.Three, Value.Zero, Value.Two, Value.Eight },
-                
-                { Value.Zero, Value.Zero, Value.Nine, Value.Three, Value.Zero, Value.Zero, Value.Zero, Value.Seven, Value.Four },
-                { Value.Zero, Value.Four, Value.Zero, Value.Zero, Value.Five, Value.Zero, Value.Zero, Value.Three, Value.Six },
-                { Value.Seven, Value.Zero, Value.Three, Value.Zero, Value.One, Value.Eight, Value.Zero, Value.Zero, Value.Zero }
+                { Value.Zero, Value.Seven, Value.Zero, Value.Zero, Value.One, Value.Nine, Value.Zero, Value.Zero, Value.Two },
+                { Value.Zero, Value.Five, Value.Two, Value.Zero, Value.Zero, Value.Three, Value.Zero, Value.Zero, Value.Zero },
+                { Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero },
+
+                { Value.Seven, Value.Zero, Value.Zero, Value.Three, Value.Zero, Value.Eight, Value.Four, Value.Zero, Value.One },
+                { Value.Zero, Value.Four, Value.Six, Value.Five, Value.Zero, Value.Zero, Value.Three, Value.Zero, Value.Zero },
+                { Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Four, Value.Zero, Value.Seven, Value.Six },
+
+                { Value.Zero, Value.Zero, Value.Three, Value.Nine, Value.Seven, Value.Zero, Value.Zero, Value.Eight, Value.Zero },
+                { Value.Two, Value.Zero, Value.Zero, Value.Eight, Value.Four, Value.Five, Value.Zero, Value.One, Value.Zero },
+                { Value.Zero, Value.Six, Value.Eight, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Seven }
+
+                //{ Value.Zero, Value.Zero, Value.Nine, Value.Zero, Value.Zero, Value.Zero, Value.Three, Value.Two, Value.Zero },
+                //{ Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Three, Value.Five, Value.Six, Value.Four },
+                //{ Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Five, Value.Zero, Value.Zero, Value.Zero, Value.Zero },
+
+                //{ Value.Zero, Value.Zero, Value.Eight, Value.Zero, Value.Zero, Value.One, Value.Zero, Value.Zero, Value.Zero },
+                //{ Value.Nine, Value.Five, Value.Four, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero },
+                //{ Value.Zero, Value.Six, Value.Zero, Value.Four, Value.Zero, Value.Five, Value.Zero, Value.Zero, Value.Eight },
+
+                //{ Value.Four, Value.Zero, Value.Zero, Value.One, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Two },
+                //{ Value.One, Value.Zero, Value.Zero, Value.Seven, Value.Zero, Value.Two, Value.Zero, Value.Five, Value.Zero },
+                //{ Value.Zero, Value.Seven, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.Zero, Value.One, Value.Nine }
+
+
+                //{ Value.Zero, Value.Zero, Value.Zero, Value.Two, Value.Six, Value.Zero, Value.Seven, Value.Zero, Value.One },
+                //{ Value.Six, Value.Eight, Value.Zero, Value.Zero, Value.Seven, Value.Zero, Value.Zero, Value.Nine, Value.Zero },
+                //{ Value.One, Value.Nine, Value.Zero, Value.Zero, Value.Zero, Value.Four, Value.Five, Value.Zero, Value.Zero },
+
+                //{ Value.Eight, Value.Two, Value.Zero, Value.One, Value.Zero, Value.Zero, Value.Zero, Value.Four, Value.Zero },
+                //{ Value.Zero, Value.Zero, Value.Four, Value.Six, Value.Zero, Value.Two, Value.Nine, Value.Zero, Value.Zero },
+                //{ Value.Zero, Value.Five, Value.Zero, Value.Zero, Value.Zero, Value.Three, Value.Zero, Value.Two, Value.Eight },
+
+                //{ Value.Zero, Value.Zero, Value.Nine, Value.Three, Value.Zero, Value.Zero, Value.Zero, Value.Seven, Value.Four },
+                //{ Value.Zero, Value.Four, Value.Zero, Value.Zero, Value.Five, Value.Zero, Value.Zero, Value.Three, Value.Six },
+                //{ Value.Seven, Value.Zero, Value.Three, Value.Zero, Value.One, Value.Eight, Value.Zero, Value.Zero, Value.Zero }
             };
             var mat = new Mat(values);
             var matManager = new MatManager(mat);

@@ -11,7 +11,7 @@ namespace SuDoKu.Managers
         {
             if (isDebug)
             {
-                Thread.Sleep(3000);
+                //Thread.Sleep(3000);
                 Console.WriteLine(text);
             }
         }
